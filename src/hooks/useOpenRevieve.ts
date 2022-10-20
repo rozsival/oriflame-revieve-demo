@@ -1,6 +1,6 @@
-import { useEffect } from "react";
+import { useEffect } from 'react';
 
-export const REVIEVE_HREF = "#open-revieve";
+import { REVIEVE_HREF } from '../constants';
 
 export const useOpenRevieve = () =>
   useEffect(() => {
@@ -10,11 +10,9 @@ export const useOpenRevieve = () =>
         event.target.hash === REVIEVE_HREF
       ) {
         event.preventDefault();
-        window.Revieve.API.show();
+        window.Revieve?.API.show();
       }
     };
-    document.addEventListener("click", onOpen);
-    return () => {
-      document.removeEventListener("click", onOpen);
-    };
+    document.addEventListener('click', onOpen);
+    return () => document.removeEventListener('click', onOpen);
   }, []);

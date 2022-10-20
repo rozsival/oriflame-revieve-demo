@@ -13,5 +13,7 @@ export type Revieve = {
   Init: (config: RevieveConfig, callback?: () => void) => void;
   API: {
     show: () => void;
+    hide: () => void;
+    unmount: () => void;
   };
 };

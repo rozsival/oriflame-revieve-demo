@@ -7,7 +7,8 @@
     "dev": "next dev",
     "format": "prettier --write './**/*.{css,js,json,md,ts,tsx}'",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "type": "tsc"
   },
   "dependencies": {
     "next": "12.3.1",
