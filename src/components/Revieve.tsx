@@ -3,7 +3,7 @@ import type { RevieveConfig } from '../../types/revieve';
 import { useOpenRevieve } from '../hooks/useOpenRevieve';
 import { useRevieve } from '../hooks/useRevieve';
 
-const revieveConfig: RevieveConfig = {
+const config: RevieveConfig = {
   partner_id: '5aPAwy5Z2m',
   locale: 'en',
   env: 'test',
@@ -14,7 +14,7 @@ const revieveConfig: RevieveConfig = {
 };
 
 export const Revieve = () => {
-  useRevieve(revieveConfig);
+  useRevieve(config);
   useOpenRevieve();
   return null;
 };
