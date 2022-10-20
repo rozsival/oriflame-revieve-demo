@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 import { REVIEVE_HREF } from '../constants';
 
-const shouldOpen = (target: EventTarget | null): target is HTMLAnchorElement =>
+const shouldOpen = (target: EventTarget | null) =>
   target instanceof HTMLAnchorElement && target.hash === REVIEVE_HREF;
 
 export const useOpenRevieve = () =>
