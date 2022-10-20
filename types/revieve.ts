@@ -1,4 +1,4 @@
-// NOTE: These typing are stub definition only, `unknown` types should be replaced with specific ones.
+// NOTE: These typings are stub definition only, `unknown` types should be replaced with specific ones.
 export type RevieveConfig = {
   partner_id: string;
   locale: string;
