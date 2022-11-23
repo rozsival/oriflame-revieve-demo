@@ -9,7 +9,10 @@ const config: RevieveConfig = {
   env: 'test',
   onAddToCart: (products) => console.log('onAddToCart', { products }),
   onCheckout: (data) => console.log('onCheckout', { data }),
-  onClickProduct: (product) => console.log('onClickProduct', { product }),
+  onClickProduct: (product) => {
+    console.log('onClickProduct', { product });
+    window.location.assign('https://mv7uat.page.link/nps5NsJ32V5k6xTb7');
+  },
   onClose: () => console.log('onClose'),
 };
 
